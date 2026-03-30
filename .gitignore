@@ -1,0 +1,31 @@
+# OS generated files (Crucial for Mac!)
+.DS_Store
+.DS_Store?
+._*
+
+# IDE and Editor folders
+.vscode/
+.idea/
+*.swp
+
+# C / C++ compiled files
+*.o
+*.out
+*.exe
+*.dSYM/
+
+# Python / Machine Learning
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.ipynb_checkpoints/
+
+# Java / Gradle (Advanced Programming)
+*.class
+*.jar
+*.war
+.gradle/
+build/
+bin/
