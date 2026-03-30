@@ -1,0 +1,14 @@
+class Utils {
+    constructor Utils new() {
+        var int x; // placeholder so the class won't crash the game
+        return this;
+    }
+
+    // Returns the remainder part of x/y
+    function int mod(int x, int y) {
+        var int q;
+        
+        let q = Math.divide(x, y);
+        return x - (q*y);
+    }
+}

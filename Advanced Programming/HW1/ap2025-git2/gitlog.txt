@@ -1,0 +1,16 @@
+* 23e472f fix merge bug second3
+* 278801c fix merge bug second
+* 5f01852 fix merge bug
+*   ee6a533 merged
+|\  
+| * ba81e6f added help feature
+* | cdc4a52 added ignore file
+* | e306746 changes in ignores
+| | * 1980009 Revert "added new feature"
+| |/  
+|/|   
+* | 9c84c04 added new feature
+|/  
+| * aa6e04d added help feature
+|/  
+* e673ef8 Initial game implementation for one player

@@ -1,0 +1,38 @@
+div.hidden {
+    display: none;
+}
+a.valid {
+    display: block;   
+}
+a.malicious {
+    display: block;
+}
+div.button {
+    width: 150px; 
+    height: 40px; 
+    background-color: yellow; 
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.div-grid {
+    display: grid;
+    width: 300px;
+    grid-template-columns: 1fr 2fr 1fr;  /* split by column. splits into 4 columns so that the left part will have 1/4 the middle 2/4 and the right 1/4*/
+
+}
+
+#lime_paragraph > .lime_paragraph > p { /* set all chllds of lime_paragraph to an element of an id limeparagraph to lime green  */
+    color: #00ff00;
+}
+#blue_background p[blue] {   /* all the elements with an attribute blue , mark the backgroung blue */
+    background-color: #0000ff;
+}
+.redcontent > p:first-child { /* any paragraph ehich is a firstchild of class redcontent  */
+    color: #ff0000; 
+}
+p.text_after::after {    /* Add the text to the p tag with class textafter  */
+    content: "Added this text"; 
+}
+

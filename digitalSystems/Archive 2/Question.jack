@@ -1,0 +1,43 @@
+// QUESTION MODEL
+// Fields: String that represents a question text, an array sized 4 of possible answers, and an index for the correct answer inside the array
+//
+class Question {
+    field String text;
+    field Array answers;
+    field int correctIndex;
+
+    constructor Question new(String questionText, Array ans, int correct) {
+        let text = questionText;
+
+        let answers = Array.new(4); // constant amount of possible answers for each question: 4
+        let answers[0] = ans[0]; // answer 1
+        let answers[1] = ans[1]; // answer 2
+        let answers[2] = ans[2]; // answer 3
+        let answers[3] = ans[3]; // answer 4
+
+        let correctIndex = correct;
+        return this;
+    }
+
+    // method to retrieve question
+    method String getQuestion() {
+        return text;
+    }
+
+    // method to retrieve answer
+    method String getAnswer(int index) { 
+        return answers[index];
+    }
+
+    // check if user's answer is the correct answer
+    method int isCorrect(int index) {
+        return index = correctIndex;
+    }
+
+    // method to dispose question object
+    method void dispose() {
+        do answers.dispose();
+        do Memory.deAlloc(this);
+        return;
+    }
+}

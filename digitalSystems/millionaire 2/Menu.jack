@@ -1,0 +1,24 @@
+class Menu {
+    field int x;
+    constructor Menu new() {
+        let x = 0; // placeholder, needs to have a statement in the constructor for it to work
+        return this;
+    }
+
+    method void run() {
+        do Output.moveCursor(5, 18);
+        do Output.printString("Who wants to be a millionaire?");
+        do Output.moveCursor(12, 28);
+        do Output.printString("Play Now");
+        do Output.moveCursor(15, 28);
+        do Output.printString("Settings");
+        do Output.moveCursor(18, 28);
+        do Output.printString("Credits");
+        return;
+    }
+
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+}

@@ -1,0 +1,10 @@
+build/
+.gradle/
+.DS_Store
+.idea/
+# Ignore SQLite database files
+*.db
+*.sqlite
+
+# Ignore any files that start with "jdbc:sqlite:file"
+jdbc:sqlite:file:*

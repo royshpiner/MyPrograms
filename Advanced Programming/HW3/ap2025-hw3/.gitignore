@@ -1,0 +1,28 @@
+build/
+.gradle/
+.DS_Store
+.idea/
+# Ignore .pyc files (compiled Python files)
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore virtual environments
+env/
+venv/
+ENV/
+venv.bak/
+*.env
+*.venv
+
+# Ignore IDE-specific files (common IDEs)
+# PyCharm
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
