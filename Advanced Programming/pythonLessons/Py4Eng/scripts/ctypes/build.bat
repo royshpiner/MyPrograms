@@ -1,1 +1,0 @@
-vcvarsall.bat amd64 & cl -LD fibonacci.c -Fefibonacci.dll
